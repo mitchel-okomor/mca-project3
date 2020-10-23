@@ -1,0 +1,74 @@
+a{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.needs > li{
+    margin-bottom: 1.6rem;
+    padding-left: 0.3rem;
+    font-size: x-large;
+
+}
+
+nav{
+    height: 5rem;
+}
+.needs{
+
+list-style-type:"✓";
+}
+
+.start-here{
+    background-color: #249c8c;
+    color: white;
+    font-size: larger;
+    height: 3.5rem;
+    width: 9rem;
+    padding: 0.5;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.productivity{
+    background-color: #e4fcf4;
+}
+
+.uploads{
+    background-color: #e4fcf4;
+
+}
+.uploads button{
+    margin-top: 2rem;
+    background-color: #249c8c;
+    border: none;
+    border-radius: 0.3rem;
+    height: 2.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #249c8c;
+color: white; 
+}
+
+footer li{
+    margin-top: 0.6rem;
+    font-size: larger;
+}
+
+.counters div {
+    padding: 2rem;
+}
+.counters  h1{
+    font-size: 3.5rem;
+}
+
+.counters p{
+    font-size: larger;
+}
