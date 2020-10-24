@@ -6,8 +6,12 @@
 }
 .cards{
 width: 100%;
+border: none;
 }
 
+.card{
+    box-shadow: gray;
+}
 a, a:hover, a:visited{
     color: black;
 }
@@ -30,5 +34,20 @@ border-bottom: #149434 solid 0.15rem !important;
     color: black;
     font-weight: 500;
     background-color: white;
-    box-shadow: gray;
+    box-shadow: grey;
+}
+
+.fa-arrow-circle-o-up{
+color: red;
+}
+.project-upload{
+background-color:transparent;
+border: none;
+width: fit-content;
+height: fit-content;
+font-size: 3rem;
+
+}
+.project-upload:focus{
+    border: none;
 }

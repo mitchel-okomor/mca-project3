@@ -1,3 +1,9 @@
+button:focus {
+    outline: none;
+}
+input:focus{
+outline: none;
+}
 a{
     color:white;
 }
@@ -19,8 +25,13 @@ nav{
     height: 5rem;
 }
 .needs{
-
-list-style-type:"✓";
+list-style-type:none;
+}
+.needs li::before{
+    content: "✓";
+    color: red;
+    margin-left:-1rem ;
+    display: inline-block;
 }
 
 .start-here{
@@ -55,7 +66,7 @@ list-style-type:"✓";
 footer{
     background: linear-gradient(to right, #44544c, #249c8c);;
 
-color: white; 
+color: white !important; 
 }
 
 footer li{
@@ -63,6 +74,10 @@ footer li{
     font-size: larger;
 }
 
+footer a{
+    color: white !important; 
+
+}
 .counters div {
     padding: 3rem;
 }
@@ -76,4 +91,8 @@ footer li{
 
 .counters a, a:hover, a:visited{
     color: black;
+}
+
+*{
+    font-family: 'Noto Sans', sans-serif;
 }

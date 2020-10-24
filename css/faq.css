@@ -1,0 +1,18 @@
+.faq{
+    background-image: radial-gradient(circle,#f4f4fc, #e4fcfc,#f4f4fc );
+}
+
+.faq > div{
+    margin: 3rem;
+}
+
+.content{
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+padding: 2rem !important;
+    width: 70%;
+    border-radius: 2rem;
+}
+section{
+    margin-top: 2rem;
+}

@@ -1,0 +1,22 @@
+.how{
+    background-image: radial-gradient(circle,#f4f4fc, #e4fcfc,#f4f4fc );
+}
+
+.how > div{
+    margin: 3rem;
+}
+
+.content{
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+padding: 4rem !important;
+    width: 70%;
+    border-radius: 2rem;
+}
+
+.how h2{
+    font-size: xx-large;
+}
+section{
+    margin-top: 2rem;
+}
