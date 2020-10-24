@@ -53,7 +53,8 @@ list-style-type:"✓";
 }
 
 footer{
-    background-color: #249c8c;
+    background: linear-gradient(to right, #44544c, #249c8c);;
+
 color: white; 
 }
 
@@ -63,7 +64,7 @@ footer li{
 }
 
 .counters div {
-    padding: 2rem;
+    padding: 3rem;
 }
 .counters  h1{
     font-size: 3.5rem;
@@ -71,4 +72,8 @@ footer li{
 
 .counters p{
     font-size: larger;
+}
+
+.counters a, a:hover, a:visited{
+    color: black;
 }
