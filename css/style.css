@@ -49,6 +49,10 @@ list-style-type:none;
     background-color: #e4fcf4;
 }
 
+.productivity-cards .card{
+    height: 19rem;
+} 
+
 .uploads{
     background-color: #e4fcf4;
 
@@ -95,4 +99,60 @@ footer a{
 
 *{
     font-family: 'Noto Sans', sans-serif;
+}
+
+@media screen and (max-width: 800px){
+    .hero-image{
+        display: none;
+    }
+    .hero-image > img{
+        display: none;
+    }
+    .intro{
+        width: 100%;
+      padding-right: 1.2rem !important;
+      padding-left: 0.8rem !important;
+
+    }
+    
+    .productivity-cards{
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .productivity-cards .card{
+        min-height: 19rem;
+        width: 100% !important;
+        margin: 0.5rem 0rem 0.5rem 0rem !important;
+        padding: 0.8rem !important;
+    } 
+
+    
+
+   .productivity-card >div{
+    padding: 0rem !important;
+    margin: 0rem !important;
+    }
+    .counters{
+        margin-right: 0 !important;
+    }
+    .uploads div{
+        padding: 0.4rem !important;
+    }
+    .uploads img{
+        float: none !important;
+        display: block;
+  margin-left: auto;
+  margin-right: auto !important;
+    }
+    .uploads button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 }

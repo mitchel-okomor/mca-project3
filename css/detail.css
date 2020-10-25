@@ -11,6 +11,7 @@ border: none;
 
 .card{
     box-shadow: gray;
+    padding: 0 !important;
 }
 a, a:hover, a:visited{
     color: black;
@@ -50,4 +51,15 @@ font-size: 3rem;
 }
 .project-upload:focus{
     border: none;
+}
+
+@media screen and (max-width: 800px){
+    .detail{ 
+        padding: 0.5rem !important;
+    }
+
+    .nav a{
+        padding: 0.5rem !important;
+        width: 2rem !important;
+    }
 }

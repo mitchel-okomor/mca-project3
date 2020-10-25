@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./js/bootstrap-4.5.3-dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1e51dfab0e.js"></script>
+
     <title>GreenBrain</title>
 </head>
 <body>
@@ -18,7 +20,7 @@
 <br>
 <div class="container-fluid mt-4">
       <div class="row mb-3 ">
-        <div class="col pl-5 pr-5 ml-4 mt-5">
+        <div class="col pl-5 pr-5 ml-4 mt-5 intro">
             <h2>We connect University students with their most important needs.</h2>
             <ul class="mt-4  needs p-0">
                 <li>Lecture notes and handouts from all Nigerian Universities</li>
@@ -26,10 +28,10 @@
                 <li>Project topics and materials in any course</li>
                 <li>Grow your network: Connect with Students from other Univeristies</li>
             </ul>
-            <button class="start-here mt-4" ><a href="./html/login.html">Start Here</a></button>
+            <button class="start-here mt-4" ><a class="text-white" href="./html/login.html">Start Here</a></button>
           </div>
-          <div class="col text-center ml-5 pl-5 mt-5">
-            <img src="./assets/hero_image.png" width="75%" alt="hero_image">
+          <div class="col hero-image text-center ml-5 pl-5 mt-5">
+            <img  src="./assets/hero_image.png" width="75%" alt="hero_image">
           </div>
       </div>
 </div>
@@ -44,32 +46,39 @@
    
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col shadow bg-white m-5 pt-4 pl-5 pr-5 pb-5">
-        <img src="./assets/books.png" width="15%" alt="books">
+  <div class="row productivity-cards m-5">
+    <div class="col-sm-6 col-lg-6 col-xl-6 col-xs-12" >
+      <div class="card shadow bg-white mr-5 pt-4 pl-5 pr-5 pb-5 rounded" >
+        <img src="./assets/books.png" width="60" alt="books">
         <h4 class="mt-2">Free access to quality learning materials</h4>
-        <p class="mt-4">Our main priority is to make learning materials accessible for students in Nigerian Univeristies. 
+        <p class="mt-2">Our main priority is to make learning materials accessible for students in Nigerian Univeristies. 
             This covers lecture notes/ handouts and exam past question papers as well as project topics and materials.</p>
-    </div>
-    <div class="col shadow bg-white m-5 pt-4 pl-5 pr-5 pb-5">
-        <img src="./assets/calendar.png" width="15%" alt="calendar">
+   </div> 
+       </div>
+    <div class="col-sm-6 col-lg-6 col-xl-6 col-xs-12 ">
+      <div class="card shadow bg-white pt-4  pl-5 pr-5 pb-5 rounded" >
+        <img src="./assets/calendar.png" width="60" alt="calendar">
         <h4 class="mt-2">Stay organised while on campus
         </h4>
-        <p class="mt-4">Save your lecture and personal study timetables online for convenient access. 
+        <p class="mt-2">Save your lecture and personal study timetables online for convenient access. 
             Safely store your academic results for private access and automatically generate your GPA for the semester.</p>
-    </div>
-    <div class="w-100"></div>
-    <div class="col shadow bg-white m-5 pt-4 pl-5 pr-5 pb-5">
-        <img src="./assets/network.png" alt="network">
+      </div>
+          </div>
+    <div class="col-sm-6 col-lg-6 col-xl-6 col-xs-12">
+      <div class="card shadow bg-white mt-5 mb-5 mr-5 pt-4 pl-5 pr-5 pb-5 rounded" >
+        <img src="./assets/network.png" width="60" alt="network">
         <h4 class="mt-2">Create your network while still in school</h4>
-        <p class="mt-4">Connect, interact, and collaborate with people studying the same course as you in other Universities in Nigeria.</p>
-    </div>
-    <div class="col shadow bg-white m-5 pt-4 pl-5 pr-5 pb-5">
-        <img src="./assets/money-bag.png" alt="money">    
+        <p class="mt-2">Connect, interact, and collaborate with people studying the same course as you in other Universities in Nigeria.</p>
+      </div>
+      </div>
+    <div class="col-sm-6 col-lg-6 col-xl-6 col-xs-12">
+      <div class="card shadow bg-white mt-5 mb-5 pt-4 pl-5 pr-5 pb-5 rounded" >
+        <img src="./assets/money-bag.png" width="60" alt="money">    
         <h4 class="mt-2">Make money while you’re at it
     </h4>
-    <p class="mt-4">Upload project materials and get 50% of the sum each time it is downloaded. Uploading more projects increases your chance of earning more money.</p>
- </div>
+    <p class="mt-2">Upload project materials and get 50% of the sum each time it is downloaded. Uploading more projects increases your chance of earning more money.</p>
+      </div>
+  </div>
  </div>
 </div>
 </div>
@@ -77,28 +86,28 @@
 <!--Counters-->
 <div class="container">
 <div class="row  mr-5 counters">
-    <div class="col text-center">
+    <div class="col-sm-3 col-lg-3 col-xl-3 col-xs-12 text-center">
       <a href="./html/details.html">
-           <h1>432</h1>
+           <h1 style="color: #fc7c8c;">432</h1>
         <p>Lecture Notes</p>
       </a>
     </div>
-    <div class="col text-center">
+    <div class=" col-sm-3 col-lg-3 col-xl-3 col-xs-12 text-center">
       <a href="./html/details.html">  
-        <h1>432</h1>
+        <h1 style="color: #eccc7c;">432</h1>
         <p> Lecture Topics</p>
       </a>
        
     </div>
-    <div class="col text-center">
+    <div class="col-sm-3 col-lg-3 col-xl-3  col-xs-12 text-center">
       <a href="./html/details.html">
-       <h1>432</h1>
+       <h1 style="color: #5c7444;">432</h1>
         <p>Question Papers</p> 
       </a>
         </div>
-    <div class="col text-center">
+    <div class="col-sm-3 col-lg-3 col-xl-3 col-xs-12 text-center">
       <a href="./html/details.html">
-        <h1>432</h1>
+        <h1 style="color: #249c8c;">432</h1>
         <p>  Project Materials</p>
       </a>      
     </div>
@@ -108,20 +117,28 @@
 
 <!--Uploads-->
 <div class="container-fluid uploads">
-    <div class="row pt-5 pb-5 ">
-        <div class="col p-3 mr-5">
-            <img class="float-right" src="./assets/collection_box.png"  width="50%" alt="collection">
+    <div class="row pt-5 pb-2 ">
+      <div class="col-sm-4 col-lg-4 col-xl-4 col-xs-12">
+        <div class="  p-3 ">
+            <img class="float-right" src="./assets/collection_box.png"  width="140" alt="collection">
         </div>
-        <div class="col p-5 mr-4">
-            <h4>Improve your school life, make money by uploading project materials</h4>
+      </div>
+      <div class="col-sm-4 col-lg-4 col-xl-4 col-xs-12">
+  <div class=" p-5 mr-4">
+            <h4 class="font-weight-bold">Improve your school life, make money by uploading project materials</h4>
         </div>
-        <div class="col p-5 mr-4">
-<button class="p-2"><a href="./html/login.html">Start Uploading</a></button>
-        </div>    
+      </div>
+
+      <div class="col-sm-4 col-lg-4 col-xl-4 col-xs-12">
+        <div class=" p-5 mr-4">
+<button class="p-2 text-white"><a class="text-white" href="./html/login.html">Start Uploading</a></button>
+        </div>  
+      </div>
+  
     </div>
     </div>  
 <!-- Footer -->
-<footer class="page-footer font-small  pt-5">
+<footer class="page-footer font-small  pt-2">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -137,13 +154,13 @@
           <!-- Lecture Notes, past Questions, Project Topics Links -->
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Lecture Notes</a>
+              <a href="./html/details.html#lectures">Lecture Notes</a>
             </li>
             <li>
-              <a href="#!">Past Questions</a>
+              <a href="./html/details.html#questions">Past Questions</a>
             </li>
             <li>
-              <a href="#!">Project Topics</a>
+              <a href="./html/details.html#projects">Project Topics</a>
             </li>
           </ul>
   

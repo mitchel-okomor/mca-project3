@@ -20,3 +20,27 @@ padding: 4rem !important;
 section{
     margin-top: 2rem;
 }
+
+
+@media screen and (max-width: 800px){
+    .content{
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+    .how{
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important; 
+        width: 100%;
+    }
+    .how > div{
+        margin-top: 2rem !important;
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+        width: 95%;
+    }
+    
+}
