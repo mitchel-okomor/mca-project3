@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/detail.css">
     <script src="https://use.fontawesome.com/1e51dfab0e.js"></script>
+    <script src="../script.js"></script>
     
     <title>Lecture notes lecture handouts and research materials from Nigerian Universities, Examinmation past question papers from all Nigerian Universities, Project ...  </title>
 </head>
@@ -33,9 +34,55 @@
         <!--Lectures-->
         <div class="tab-pane fade show active" id="lectures" role="tabpanel" aria-labelledby="nav-lectures-tab">
           <!--Filter--> 
-          <div class="mb-5">
-                <button class="filter shadow"><i class="fa fa-filter" aria-hidden="true"></i>
+          <div class="mb-5 filter-tab">
+                <button class="filter shadow" onclick="toggleDisplay(`filter`)"><i class="fa fa-filter" aria-hidden="true"></i>
                   FIlter BY Course</button>
+                  <div class="filter-options hide" id="filter">
+                    <ul class="bg-white">
+                      <li>
+                        <h5 class="pl-2 pt-4">Accounting</h5>
+                        <div class="container ">
+                        <div class="row">
+                          <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                          <div class="col-3 pr-2"><a href="#">400Level</a></div>
+
+                        </div>
+                      </div></li>
+                      <li>
+                        <h5 class="pl-2 pt-4">Banking and Finance</h5>
+                        <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                          <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                        </div>
+                      </div></li>
+                      <li>
+                        <h5 class="pl-2 pt-4">Business Administration</h5>
+                        <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                          <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                        </div>
+                      </div></li>
+                      <li>
+                        <h5 class="pl-2 pt-4">Public Administration</h5>
+                        <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                          <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                          <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                        </div>
+                      </div></li>
+               
+                    </ul>
+                  </div>
             </div>
             <!--Cards-->
             <div class="container-fluid">
@@ -115,95 +162,138 @@
         
         <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="nav-questions-tab">
              <!--Filter--> 
-             <div class="mb-5">
-              <button class="filter shadow"><i class="fa fa-filter" aria-hidden="true"></i>
+             <div class="mb-5 filter-tab">
+              <button class="filter shadow" onclick="toggleDisplay(`filter-2`)"><i class="fa fa-filter" aria-hidden="true"></i>
                 FIlter BY Course</button>
+                <div class="filter-options hide" id="filter-2">
+                  <ul class="bg-white">
+                    <li>
+                      <h5 class="pl-2 pt-4">Accounting</h5>
+                      <div class="container ">
+                      <div class="row">
+                        <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                        <div class="col-3 pr-2"><a href="#">400Level</a></div>
+
+                      </div>
+                    </div></li>
+                    <li>
+                      <h5 class="pl-2 pt-4">Banking and Finance</h5>
+                      <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                        <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                      </div>
+                    </div></li>
+                    <li>
+                      <h5 class="pl-2 pt-4">Business Administration</h5>
+                      <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                        <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                      </div>
+                    </div></li>
+                    <li>
+                      <h5 class="pl-2 pt-4">Public Administration</h5>
+                      <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">200Level</a></div>
+                        <div class="col-3 pr-1"><a href="#">300Level</a></div>
+                        <div class="col-3 pr-2"><a href="#">400Level</a></div>
+                      </div>
+                    </div></li>
+             
+                  </ul>
+                </div>
           </div>
           <!--Cards-->
           <div class="container-fluid">
-             <div class="row">
-              <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-                <div class="card col-12 shadow  text-center" >
-              <div class="card-header text-white bg-primary">Biology</div>
-              <div class="card-body bg-white pb-0">
-                <h5 class="card-title "><a href="#">BOT105</a></h5>
-                <p class=" ">university of abuja</p>
-                <p class="">200level</p>
-              </div>
-            </div> 
-             </div>
-             <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-              <div class="card col-12 shadow  text-center" >
-            <div class="card-header text-white bg-primary">Biology</div>
-            <div class="card-body bg-white pb-0">
-              <h5 class="card-title "><a href="#">BOT105</a></h5>
-              <p class=" ">university of abuja</p>
-              <p class="">200level</p>
-            </div>
-          </div> 
-           </div>
-           <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-            <div class="card col-12 shadow  text-center" >
-          <div class="card-header text-white bg-primary">Biology</div>
-          <div class="card-body bg-white pb-0">
-            <h5 class="card-title "><a href="#">BOT105</a></h5>
-            <p class=" ">university of abuja</p>
-            <p class="">200level</p>
-          </div>
-        </div> 
-         </div>
-         <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-          <div class="card col-12 shadow  text-center" >
-        <div class="card-header text-white bg-primary">Biology</div>
-        <div class="card-body bg-white pb-0">
-          <h5 class="card-title "><a href="#">BOT105</a></h5>
-          <p class=" ">university of abuja</p>
-          <p class="">200level</p>
-        </div>
-      </div> 
-       </div>
-       <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-        <div class="card col-12 shadow  text-center" >
-      <div class="card-header text-white bg-primary">Biology</div>
-      <div class="card-body bg-white pb-0">
-        <h5 class="card-title "><a href="#">BOT105</a></h5>
-        <p class=" ">university of abuja</p>
-        <p class="">200level</p>
-      </div>
-    </div> 
-     </div>
-     <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-      <div class="card col-12 shadow  text-center" >
-    <div class="card-header text-white bg-primary">Biology</div>
-    <div class="card-body bg-white pb-0">
-      <h5 class="card-title "><a href="#">BOT105</a></h5>
-      <p class=" ">university of abuja</p>
-      <p class="">200level</p>
-    </div>
-  </div> 
+            <div class="row"> 
+  <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+     <div class="card col-12 shadow  text-center" >
+   <div class="card-header text-white bg-primary">Biology</div>
+   <div class="card-body bg-white pb-0">
+     <h5 class="card-title "><a href="#">BOT105</a></h5>
+     <p class=" ">university of abuja</p>
+     <p class="">200level</p>
+     <p>2011/2012 Section</p>
    </div>
-   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-    <div class="card col-12 shadow  text-center" >
-  <div class="card-header text-white bg-primary">Biology</div>
-  <div class="card-body bg-white pb-0">
-    <h5 class="card-title "><a href="#">BOT105</a></h5>
-    <p class=" ">university of abuja</p>
-    <p class="">200level</p>
+ </div> 
   </div>
-</div> 
+
+  <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+   <div class="card col-12 shadow  text-center" >
+ <div class="card-header text-white bg-primary">Biology</div>
+ <div class="card-body bg-white pb-0">
+   <h5 class="card-title "><a href="#">BOT105</a></h5>
+   <p class=" ">university of abuja</p>
+   <p class="">200level</p>
+   <p>2012/2013 Section</p>
+
  </div>
- <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-  <div class="card col-12 shadow  text-center" >
+</div> 
+</div>
+
+<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+ <div class="card col-12 shadow  text-center" >
 <div class="card-header text-white bg-primary">Biology</div>
 <div class="card-body bg-white pb-0">
-  <h5 class="card-title "><a href="#">BOT105</a></h5>
-  <p class=" ">university of abuja</p>
-  <p class="">200level</p>
+ <h5 class="card-title "><a href="#">BOT105</a></h5>
+ <p class=" ">university of abuja</p>
+ <p class="">200level</p>
+ <p>2013/2014 Section</p>
+
 </div>
 </div> 
 </div>
-        </div>   
-          </div>
+
+<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+<div class="card col-12 shadow  text-center" >
+<div class="card-header text-white bg-primary">Biology</div>
+<div class="card-body bg-white pb-0">
+<h5 class="card-title "><a href="#">BOT105</a></h5>
+<p class=" ">university of abuja</p>
+<p class="">200level</p>
+<p>2015/2016 Section</p>
+
+</div>
+</div> 
+</div>
+
+<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+<div class="card col-12 shadow  text-center" >
+<div class="card-header text-white bg-primary">Biology</div>
+<div class="card-body bg-white pb-0">
+<h5 class="card-title "><a href="#">BOT105</a></h5>
+<p class=" ">university of abuja</p>
+<p class="">200level</p>
+<p>2016/2017 Section</p>
+
+</div>
+</div> 
+</div>
+
+<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+<div class="card col-12 shadow  text-center" >
+<div class="card-header text-white bg-primary">Biology</div>
+<div class="card-body bg-white pb-0">
+<h5 class="card-title "><a href="#">BOT105</a></h5>
+<p class=" ">university of abuja</p>
+<p class="">200level</p>
+<p>2017/20118 Section</p>
+
+</div>
+</div> 
+</div>
+               
+               </div>
+     </div>
       
         </div>
 
@@ -212,92 +302,127 @@
         <!--Project Materials-->
         <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="nav-projects-tab">
 <div class="row  justify-content-between mb-3 d-flex ">
-  <button class="filter shadow ml-4 mt-3" ><i class="fa fa-filter" aria-hidden="true"></i>
-    FIlter BY Course</button>
+  <div class="col mb-5 filter-tab">
+    <button class="filter shadow" onclick="toggleDisplay(`filter-3`)"><i class="fa fa-filter" aria-hidden="true"></i>
+      FIlter BY Course</button>
+      <div class="filter-options hide" id="filter-3">
+        <ul class="bg-white">
+          <li>
+            <h5 class="pl-2 pt-4">Accounting</h5>
+            <div class="container ">
+            <div class="row">
+              <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+              <div class="col-3 pr-1"><a href="#">200Level</a></div>
+              <div class="col-3 pr-1"><a href="#">300Level</a></div>
+              <div class="col-3 pr-2"><a href="#">400Level</a></div>
 
-    <button class="mr-5 pr-2 project-upload" ><i class="fa  fa-arrow-circle-o-up" aria-hidden="true"></i>
-    </button>
+            </div>
+          </div></li>
+          <li>
+            <h5 class="pl-2 pt-4">Banking and Finance</h5>
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+              <div class="col-3 pr-1"><a href="#">200Level</a></div>
+              <div class="col-3 pr-1"><a href="#">300Level</a></div>
+              <div class="col-3 pr-2"><a href="#">400Level</a></div>
+            </div>
+          </div></li>
+          <li>
+            <h5 class="pl-2 pt-4">Business Administration</h5>
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+              <div class="col-3 pr-1"><a href="#">200Level</a></div>
+              <div class="col-3 pr-1"><a href="#">300Level</a></div>
+              <div class="col-3 pr-2"><a href="#">400Level</a></div>
+            </div>
+          </div></li>
+          <li>
+            <h5 class="pl-2 pt-4">Public Administration</h5>
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-3 pr-1 pl-2"><a class="font-smaller" href="#">100Level</a></div>
+              <div class="col-3 pr-1"><a href="#">200Level</a></div>
+              <div class="col-3 pr-1"><a href="#">300Level</a></div>
+              <div class="col-3 pr-2"><a href="#">400Level</a></div>
+            </div>
+          </div></li>
+   
+        </ul>
+      </div>
+</div>
+ 
+<div class="col"><button class="mr-5 pr-2 project-upload float-right" ><a href="./login.html"><i class="fa  fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+    </button></div>
+    
 </div>
 <div class="container-fluid">
 <div class="row">
-  <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
+  <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
     <div class="card col-12 shadow  text-center" >
-  <div class="card-header text-white bg-primary">Biology</div>
-  <div class="card-body bg-white pb-0">
-    <h5 class="card-title "><a href="#">BOT105</a></h5>
-    <p class=" ">university of abuja</p>
-    <p class="">200level</p>
-  </div>
-</div> 
- </div> <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-  <div class="card col-12 shadow  text-center" >
-<div class="card-header text-white bg-primary">Biology</div>
-<div class="card-body bg-white pb-0">
-  <h5 class="card-title "><a href="#">BOT105</a></h5>
-  <p class=" ">university of abuja</p>
-  <p class="">200level</p>
-</div>
-</div> 
-</div> <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-        <div class="card col-12 shadow  text-center" >
-      <div class="card-header text-white bg-primary">Biology</div>
-      <div class="card-body bg-white pb-0">
-        <h5 class="card-title "><a href="#">BOT105</a></h5>
-        <p class=" ">university of abuja</p>
-        <p class="">200level</p>
-      </div>
-    </div> 
-     </div>
-     <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-      <div class="card col-12 shadow  text-center" >
-    <div class="card-header text-white bg-primary">Biology</div>
     <div class="card-body bg-white pb-0">
-      <h5 class="card-title "><a href="#">BOT105</a></h5>
-      <p class=" ">university of abuja</p>
-      <p class="">200level</p>
+    <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+    <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
     </div>
-  </div> 
-   </div>
-   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-    <div class="card col-12 shadow  text-center" >
-  <div class="card-header text-white bg-primary">Biology</div>
-  <div class="card-body bg-white pb-0">
-    <h5 class="card-title "><a href="#">BOT105</a></h5>
-    <p class=" ">university of abuja</p>
-    <p class="">200level</p>
-  </div>
-</div> 
- </div>
- <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-  <div class="card col-12 shadow  text-center" >
-<div class="card-header text-white bg-primary">Biology</div>
-<div class="card-body bg-white pb-0">
-  <h5 class="card-title "><a href="#">BOT105</a></h5>
-  <p class=" ">university of abuja</p>
-  <p class="">200level</p>
-</div>
-</div> 
-</div>
-<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-  <div class="card col-12 shadow  text-center" >
-<div class="card-header text-white bg-primary">Biology</div>
-<div class="card-body bg-white pb-0">
-  <h5 class="card-title "><a href="#">BOT105</a></h5>
-  <p class=" ">university of abuja</p>
-  <p class="">200level</p>
-</div>
-</div> 
-</div>
-<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 p-2">
-  <div class="card col-12 shadow  text-center" >
-<div class="card-header text-white bg-primary">Biology</div>
-<div class="card-body bg-white pb-0">
-  <h5 class="card-title "><a href="#">BOT105</a></h5>
-  <p class=" ">university of abuja</p>
-  <p class="">200level</p>
-</div>
-</div> 
-</div>
+    </div> 
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+      <div class="card col-12 shadow  text-center" >
+      <div class="card-body bg-white pb-0">
+      <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+      <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+      </div>
+      </div> 
+      </div> 
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+        <div class="card col-12 shadow  text-center" >
+        <div class="card-body bg-white pb-0">
+        <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+        <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+        </div>
+        </div> 
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+          <div class="card col-12 shadow  text-center" >
+          <div class="card-body bg-white pb-0">
+          <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+          <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+          </div>
+          </div> 
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+            <div class="card col-12 shadow  text-center" >
+            <div class="card-body bg-white pb-0">
+            <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+            <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+            </div>
+            </div> 
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+              <div class="card col-12 shadow  text-center" >
+              <div class="card-body bg-white pb-0">
+              <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+              <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+              </div>
+              </div> 
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+                <div class="card col-12 shadow  text-center" >
+                <div class="card-body bg-white pb-0">
+                <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+                <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+                </div>
+                </div> 
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 p-2">
+                  <div class="card col-12 shadow  text-center" >
+                  <div class="card-body bg-white pb-0">
+                  <h5 class=" " style="font-size: small;"><a href="#">HISTORY OF KARU, F.C.T UP TO 1999</a></h5>
+                  <p class="small text-left"><span class="font-weight-bold">Course:</span> History <span class="font-weight-bold">Pages:</span> 45 <span class="font-weight-bold">Research Date:</span> November, 2019</p>
+                  </div>
+                  </div> 
+                  </div>
         </div>
 </div>
           

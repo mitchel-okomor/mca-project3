@@ -18,9 +18,9 @@ a, a:hover, a:visited{
 }
 
 .nav-item:hover{   
-     color: white;
+     color: rgb(107, 109, 238);
 
-background-color: #149434;
+background-color: transparent;
 }
 a.active{
     color: #149434 !important;
@@ -29,6 +29,7 @@ border-bottom: #149434 solid 0.15rem !important;
 }
 
 .filter{
+    position: relative;
     border: none;
     border-radius: 0.3rem;
     height: 2.5rem;
@@ -36,6 +37,29 @@ border-bottom: #149434 solid 0.15rem !important;
     font-weight: 500;
     background-color: white;
     box-shadow: grey;
+}
+
+
+
+.filter-options{
+    position: absolute;
+    z-index: 10;
+}
+.filter-options ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 15rem;
+    overflow: auto;
+    font-size: small;
+}
+
+.filter-options ul:last-child{
+    padding-bottom: 1rem;
+}
+
+.filter-options ul li a{
+    color: #149434;
 }
 
 .fa-arrow-circle-o-up{
