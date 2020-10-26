@@ -1,6 +1,19 @@
 button:focus {
     outline: none;
 }
+nav button:hover{
+    background-color: white !important;
+}
+
+nav button a{
+    color: black;
+}
+nav button a:hover{
+    color:  rgb(107, 109, 238) !important;
+    color: black;
+    text-decoration: underline;
+}
+
 input:focus{
 outline: none;
 }
@@ -24,6 +37,7 @@ a:hover{
 nav{
     height: 5rem;
 }
+
 .needs{
 list-style-type:none;
 }
