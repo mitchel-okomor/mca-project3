@@ -136,6 +136,22 @@ footer a{
     display: block;
 }
 
+@keyframes change {
+    from {
+    width: 75%;
+    }
+    to {
+    width: 65%;
+    }
+  }
+  
+  .hero-image >img {
+    animation-name: change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
 @media screen and (max-width: 800px){
     .hero-image{
         display: none;
