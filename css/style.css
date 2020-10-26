@@ -138,14 +138,16 @@ footer a{
 
 @keyframes change {
     from {
-    width: 75%;
+        padding-top: 1em;
+
     }
     to {
-    width: 65%;
+        padding-top: 2em;
     }
   }
   
   .hero-image >img {
+      padding-right: 5.5rem;
     animation-name: change;
     animation-duration: 3s;
     animation-iteration-count: infinite;
