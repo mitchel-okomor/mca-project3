@@ -79,6 +79,7 @@ font-size: 3rem;
 
 #filter-3 > ul > li{
     background-color: #dcf4dc;
+    min-width: 15rem;
     }
     
     #filter-3 > ul > li>a>h5{
