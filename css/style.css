@@ -38,6 +38,10 @@ nav{
     height: 5rem;
 }
 
+.first-intro{
+    margin-top: 6rem !important;
+
+}
 .intro{
     padding-right: 8rem !important;
 }

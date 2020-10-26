@@ -1,4 +1,5 @@
 function toggleDisplay (id){
+
    var el = document.getElementById(id);
    if(el.classList.contains("hide")){
        console.log("contained");
