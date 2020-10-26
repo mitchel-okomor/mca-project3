@@ -153,7 +153,16 @@ footer a{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
   }
+#filter-3 > ul > li{
+background-color: #dcf4dc;
+font-size: small !important;
 
+}
+
+#filter-3 > ul > li>a{
+    color: black;
+    font-size: 0.2rem;
+    }
 @media screen and (max-width: 800px){
     .hero-image{
         display: none;

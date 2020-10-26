@@ -77,6 +77,14 @@ font-size: 3rem;
     border: none;
 }
 
+#filter-3 > ul > li{
+    background-color: #dcf4dc;
+    }
+    
+    #filter-3 > ul > li>a>h5{
+        color: rgb(100, 99, 99);
+        font-size: 1rem;
+        }
 @media screen and (max-width: 800px){
     .detail{ 
         padding: 0.5rem !important;
