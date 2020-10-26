@@ -30,7 +30,7 @@ a:hover{
 .needs > li{
     margin-bottom: 1.6rem;
     padding-left: 0.3rem;
-    font-size: x-large;
+    font-size: 1.4rem;
 
 }
 
@@ -38,14 +38,25 @@ nav{
     height: 5rem;
 }
 
+.intro{
+    padding-right: 8rem !important;
+}
+.intro > h2{
+    font-size: 1.9rem;
+}
+
 .needs{
 list-style-type:none;
+
 }
 .needs li::before{
-    content: "✓";
+    content: "\2713";
     color: red;
-    margin-left:-1rem ;
+    margin-left:-1em ;
     display: inline-block;
+    font-weight: 600;
+    width: 1em;
+    padding: 0 -20px;
 }
 
 .start-here{
