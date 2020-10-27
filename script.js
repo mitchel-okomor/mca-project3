@@ -11,3 +11,10 @@ function toggleDisplay (id){
 }
 
 }
+
+// close the filter spinner
+
+(function() {
+    var target = document.querySelectorAll("filter-options");
+
+   })();

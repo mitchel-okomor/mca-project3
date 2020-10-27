@@ -1,6 +1,9 @@
 button:focus {
     outline: none;
 }
+nav >.btn {
+  border: rgb(165, 163, 163) solid 1px !important;
+    }
 nav button:hover{
     background-color: white !important;
 }
@@ -142,28 +145,27 @@ footer a{
 
     }
     to {
-        padding-top: 2em;
+        padding-top: 3em;
     }
   }
   
   .hero-image >img {
       padding-right: 5.5rem;
     animation-name: change;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
   }
-#filter-3 > ul > li{
-background-color: #dcf4dc;
-font-size: small !important;
 
-}
-
-#filter-3 > ul > li>a{
-    color: black;
-    font-size: 0.2rem;
-    }
 @media screen and (max-width: 800px){
+    nav{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    nav >.btn {
+    margin-right: 1.4rem !important;
+    }
     .hero-image{
         display: none;
     }
@@ -217,4 +219,6 @@ font-size: small !important;
         margin-top: 0 !important;
         padding-top: 0 !important;
     }
+
+
 }
