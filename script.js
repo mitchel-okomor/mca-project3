@@ -12,9 +12,15 @@ function toggleDisplay (id){
 
 }
 
-// close the filter spinner
 
-(function() {
-    var target = document.querySelectorAll("filter-options");
-
-   })();
+// //http request
+// function loadDoc() {
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function() {
+//       if (this.readyState == 4 && this.status == 200) {
+//         console.log(this.response);
+//       }
+//     };
+//     xhttp.open("GET", "https://greenbrainbe.herokuapp.com/api/v1/lecturenotes", true);
+//     xhttp.send();
+//   }

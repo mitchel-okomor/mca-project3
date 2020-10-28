@@ -12,6 +12,7 @@ border: none;
 .card{
     box-shadow: gray;
     padding: 0 !important;
+    height: 100%;
 }
 a, a:hover, a:visited{
     color: black;
@@ -27,6 +28,7 @@ a.active{
     background-color: transparent !important;
 border-bottom: #149434 solid 0.15rem !important;
 }
+
 
 .filter{
     position: relative;
