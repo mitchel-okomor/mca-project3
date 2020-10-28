@@ -21,7 +21,7 @@ function getRandomColor() {
     <div class="card col-12 shadow  text-center" >
       <div class="card-header text-white text-capitalize " style="background-color:${getRandomColor()}">${el.course}</div>
       <div class="card-body bg-white pb-0">
-    <h5 class="card-title "><a href="#">${el.title}</a></h5>
+    <h5 class="card-title text-black-50"><a href="#">${el.title}</a></h5>
     <p class=" ">${el.school}</p>
     <p class="">${el.level}level</p>
   </div>
