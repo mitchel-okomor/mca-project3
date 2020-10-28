@@ -14,6 +14,12 @@ border: none;
     padding: 0 !important;
     height: 100%;
 }
+.card h5{
+    color: black
+}
+.card h5>a{
+    color: black;
+}
 a, a:hover, a:visited{
     color: black;
 }
