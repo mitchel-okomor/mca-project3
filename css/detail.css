@@ -18,10 +18,10 @@ border: none;
     color: black
 }
 .card h5>a{
-    color: black;
+    color: black !important;
 }
 a, a:hover, a:visited{
-    color: black;
+    color: black !important;
 }
 
 .nav-item:hover{   
