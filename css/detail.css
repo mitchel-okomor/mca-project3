@@ -11,14 +11,19 @@ border: none;
 
 .card{
     box-shadow: gray;
-    padding: 0 !important;
+    padding: 0;
     height: 100%;
 }
+
 .card h5{
     color: black
 }
 .card h5>a{
     color: black !important;
+}
+
+.card-body{
+    padding: 0.5rem;
 }
 a, a:hover, a:visited{
     color: black !important;
@@ -67,7 +72,7 @@ border-bottom: #149434 solid 0.15rem !important;
 }
 
 .filter-options ul li a{
-    color: #149434;
+    color: #149434 !important;
 }
 
 .fa-arrow-circle-o-up{
@@ -79,6 +84,8 @@ border: none;
 width: fit-content;
 height: fit-content;
 font-size: 3rem;
+padding: 0;
+margin: 0;
 
 }
 .project-upload:focus{
@@ -87,15 +94,17 @@ font-size: 3rem;
 
 #filter-3 > ul > li{
     background-color: #dcf4dc;
-    min-width: 15rem;
+    width: 16rem;
     }
     
     #filter-3 > ul > li>a>h5{
         color: rgb(100, 99, 99);
         font-size: 1rem;
         }
+
+
 @media screen and (max-width: 800px){
-    .detail{ 
+    .container-fluid{ 
         padding: 0.5rem !important;
     }
 
@@ -103,4 +112,15 @@ font-size: 3rem;
         padding: 0.5rem !important;
         width: 2rem !important;
     }
+.filter-tab{
+    margin-bottom: 0.6rem !important;
+}
+
+.filter-options{
+    width: 20rem;
+}
+
+#filter-3{
+    width: 16.5rem;
+}
 }
