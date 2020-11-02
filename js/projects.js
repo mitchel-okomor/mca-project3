@@ -1,7 +1,13 @@
 (async function loadProjects() {
   const data = await fetch("https://greenbrainbe.herokuapp.com/api/v1/projects")
     .then(response => response.json())
-    .then(res => {return res.data});
+    .then(res => {
+      if(res){
+        var el = document.getElementById("project-spinner");
+        console.log(el.classList);
+           el.classList.add("hide");
+          }
+      return res.data});
   
  
   

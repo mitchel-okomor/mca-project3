@@ -133,10 +133,10 @@ footer a{
     font-family: 'Noto Sans', sans-serif;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 .show{
-    display: block;
+    display: block !important;
 }
 
 @keyframes change {

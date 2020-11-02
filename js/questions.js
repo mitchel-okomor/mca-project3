@@ -1,7 +1,13 @@
 (async function loadQuestions() {
   const data = await fetch("https://greenbrainbe.herokuapp.com/api/v1/pastquestions")
     .then(response => response.json())
-    .then(res => {return res.data});
+    .then(res => {
+      if(res){
+        var el = document.getElementById("lecture-spinner");
+        console.log(el.classList);
+           el.classList.add("hide");
+          }
+      return res.data});
 
 
 

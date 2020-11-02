@@ -1,7 +1,14 @@
 (async function loadLectures() {
+
 const data = await fetch("https://greenbrainbe.herokuapp.com/api/v1/lecturenotes")
-  .then(response => response.json())
-  .then(res => {return res.data});
+  .then(response =>  response.json())
+  .then(res => {
+    if(res){
+      var el = document.getElementById("lecture-spinner");
+      console.log(el.classList);
+         el.classList.add("hide");
+        }
+    return res.data});
 
 //get random colors
 function getRandomColor() {
@@ -26,8 +33,10 @@ let cardData = data.map(function(el){
 </div>
 </div> 
 </div>`;
+
 return card;
 });
 element.innerHTML = cardData.join('\n');
+
 
 })();
